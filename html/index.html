@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../script/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/feb2276715.js" crossorigin="anonymous"></script>
+</head>
+<body class="sub-active ">
+    <header id="top">
+        
+        <h1 class="h1-logo">
+            <a href="./../html/index.html">
+                <img src="./../images/LOGO.svg" alt="calm logo">
+                <span class="visually_hidden" >Stress Relief</span>
+            </a>
+        </h1>
+        <nav class="menu-main">
+            <ul>
+                <li><a href="../html/article.html">WHAT'S STRESS</a>
+                    </li>
+                <li><a href="../html/article.html">EXERCISE</a></li>
+                <li><a href="../html/article.html">STYLE & COLOR</a></li>
+                <li><a href="../html/article.html">FOOD</a></li>
+                <li><a href="../html/article.html">TRAVEL</a></li>
+                <li><a href="../html/contact.html">CONTACT</a></li>
+            </ul>
+        </nav> 
+        <nav class="menu-social">
+            <ul>
+                <li>
+                    <a href="https://facebook.com">
+                        <i class="fab fa-facebook" aria-hidden="true" title="Facebook" aria-label="facebook">
+                        </i>
+                        <span class="visually_hidden">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com">
+                        <i class="fab fa-instagram" aria-hidden="true" title="Instagram" aria-label="instagram">
+                        </i>
+                        <span class="visually_hidden">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pinterest.com">
+                        <i class="fab fa-pinterest" aria-hidden="true" title="Pinterest" aria-label="pinterest">
+                        </i>
+                        <span class="visually_hidden">Pinterest</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com">
+                        <i class="fab fa-twitter" aria-hidden="true" title="Twitter" aria-label="twitter">
+                        </i>
+                        <span class="visually_hidden">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search">
+            <button class="sub-button" id="close-image"  title="Subscribe">
+                <img src="./../images/email.svg" alt="mail us">
+            </button>
+
+            <button class="search-button" title="Search" onclick="toggleSearch()">
+                <i class="fas fa-search" aria-hidden="true" ></i>
+            </button>
+
+                <input class="search-input" type="text" placeholder="Search..">                               
+        </div>
+    </header> 
+
+    <!-- end of header -->
+
+    <!-- START MAIN =======================================
+    -->
+    
+    <main>
+        <!-- ======= feature ====== -->
+        <section class="slide-container">
+            <div id="slides">
+                <article class="slide">
+                    <a href="./article.html">
+                        <div class="article-img">
+                            <img src="../images/stress.jpg" width="100%" alt="What Stress is...">
+                        </div>
+                    </a>    
+                    <div class="ft-caption">
+                        <div class="title">
+                            <a href="../html/article.html">
+                                <h3>Stress: A brief introduction</h3>
+                            </a>
+                        </div>
+                        <div class="by">By Wikipedia</div>
+                        <div class="category">
+                            <a href="#">What's Stress</a>
+                        </div>
+                        <p>In psychology, stress is a feeling of emotional strain and pressure. Stress is a type of psychological pain. Small amounts of stress may be beneficial, as it can improve athletic performance, motivation and reaction to the environment...</p>
+                        <div class="fadeart-text">
+                            <span class="date">March 20, 2023</span>
+                            <span class="readmore">
+                                <a href="../html/article.html">Read More..</a>
+                            </span>
+                        </div> 
+                    </div>           
+                </article>
+                <div class="ft2">
+                    <article class="slide">
+                        <a href="#">
+                            <div class="article-img">
+                                <img src="../images/yoga.jpg" alt="Exercise to do">
+                            </div>
+                        </a>
+                        <div class="ft-caption">
+                            <div class="title">
+                                <a href="#">
+                                    <h3>7 Simple Activities To Reduce Stress In Your Daily Life</h3>
+                                </a>
+                            </div>
+                            <div class="by">
+                                by Dr. Liz
+                            </div>
+                            <div class="category">
+                                <a href="#">Exercise</a>
+                            </div>
+                            <p>Breathing exercises help reduce heart rate and lower stress hormones. Even basic breathing exercises, such as taking 10 very slow inhales and exhales can help...</p>
+                            <div class="fadeart-text">
+                                <span class="date">May 20, 2022</span>
+                                <span class="readmore">
+                                    <a href="#">Read More..</a>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <a href="#">
+                            <div class="article-img">
+                                <img src="../images/eating(mindful).jpg" alt="food to eat">
+                            </div>
+                        </a>
+                        <div class="ft-caption">
+                            <div class="title">
+                                <a href="#">
+                                    <h3>Best Foods to Help Fight Stress</h3>
+                                </a>
+                            </div>
+                            <div class="by">By Kalah Siegel</div>
+                            <div class="category">
+                                <a href="#">Food</a>    
+                            </div>
+                            <p>There are many ways to manage and even reduce stress levels when you’re feeling tense. Food can be one of your biggest allies — or enemies. It can make your stress levels go down or up, so it’s critical to pay attention to what you’re eating when you’re feeling frazzled...</p>
+                            <div class="fadeart-text">
+                                <span class="date">March 26, 2019</span>
+                                <span class="readmore">
+                                    <a href="#">Read More..</a>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+<!--  END OF FEATURE SECTION -->
+
+<!-- START OF LATEST-ARTICLES -->
+        <section class="latest-articles">
+            <h2><span class="section-heading">
+                Latest Posts</span>
+            </h2>
+
+            <!-- article 1 -->
+            
+            <article class="article1">
+                <a href="#">
+                    <div class="article-img">
+                        <img src="../images/travelling.jpg" alt="Travel">
+                    </div>
+                </a>
+                <div class="article-container">
+                    <div class="title">
+                        <a href="#">
+                            <h3>Best Vacations for Relieving Stress</h3>
+                        </a>
+                    </div>
+                    <div class="by">By K.C Dermody</div>
+                    <div class="category">
+                        <a href="#">Travel</a>    
+                    </div>
+                    <p>If you’re under the impression that traveling is an indulgence, you should know that it’s also something that’s good for your health and happiness, as it can significantly reduce stress, and help you have a more positive outlook on life over the long term...</p>
+                    <div class="fadeart-text">
+                        <span class="date"> April 26,2022</span>
+                        <span class="readmore">
+                            <a href="#">Read More..</a>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- END OF ARTICLE 1 -->
+
+            <!-- START OF ARTICLE 2 -->
+            <article class="article2">
+                <a href="#">
+                    <div class="article-img">
+                        <img src="../images/clothes.jpg" alt="style and color">
+                    </div>
+                </a>
+                <div class="article-container">
+                    <div class="title">
+                        <a href="#">
+                            <h3>Choosing the right color brings peace </h3>
+                        </a>
+                    </div>
+                    <div class="by">By HO GUO XIONG</div>
+                    <div class="category">
+                        <a href="#">style and color</a>    
+                    </div>
+                    <p>Pablo Picasso once said that “colours, like features, follow the changes of the emotions”. We think it’s so true. Different colours have an impact on our moods and how we feel... </p>
+                    <div class="fadeart-text">
+                        <span class="date"> May 18,2021</span>
+                        <span class="readmore">
+                            <a href="#">Read More..</a>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article3">
+                <a href="#">
+                    <div class="article-img">
+                        <img src="../images/peace(brainandbody).jpg" alt="style and color">
+                    </div>
+                </a>
+                <div class="article-container">
+                    <div class="title">
+                        <a href="#">
+                            <h3>What Can We Do to Make a Peaceful World</h3>
+                        </a>
+                    </div>
+                    <div class="by">By Valerie Forgeard</div>
+                    <div class="category">
+                        <a href="#">What's Stress</a>    
+                    </div>
+                    <p>We live in turbulent times, and sometimes it feels like peace is a distant concept that will only occur when we are no longer around to experience it. But when you look at the big picture, it becomes clear that peace has been achieved in the past and can be achieved again...    </p>
+                    <div class="fadeart-text">
+                        <span class="date"> March 7,2022</span>
+                        <span class="readmore">
+                            <a href="#">Read More..</a>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <!-- END OF ARTICLE 3 -->
+
+            <!-- START OF ARTICLE 4 -->
+            <article class="article4">
+                <a href="#">
+                    <div class="article-img">
+                        <img src="../images/running.jpg" alt="style and color">
+                    </div>
+                </a>
+                <div class="article-container">
+                    <div class="title">
+                        <a href="#">
+                            <h3>How exercise leads to sharper thinking and a healthier brain</h3>
+                        </a>
+                    </div>
+                    <div class="by">By Gretchen Reynolds </div>
+                    <div class="category">
+                        <a href="#">What's Exercise</a>    
+                    </div>
+                    <p>That’s the message of two important new studies of how physical activity changes our minds. In one, scientists delved into the lives, DNA and cognition of thousands of people to show that regular exercise leads to much sharper thinking...    </p>
+                    <div class="fadeart-text">
+                        <span class="date"> March 7,2022</span>
+                        <span class="readmore">
+                            <a href="#">Read More..</a>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+  <!-- END OF LASTEST ARTICLE -->
+
+<div class="backtop">
+<a href="#top">
+  <div class="arrow">
+    <i class="fas fa-chevron-up" aria-hidden="true" aria-label="top arrow"></i>
+  </div>
+back to top</a>
+</div>   
+
+
+    <!-- START FOOTER ===================================== -->
+    <footer>
+        <div class="footer-content-warp">
+            <section class="fextra">
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="../html/source.html">SOURCES</a></li>
+                </ul>
+            </section>
+            <section class="fmenu">
+                <ul>
+                    <li><a href="../html/index.html">FEATURED</a></li>
+                    <li><a href="../html/article.html">STYLE & COLOR</a></li>
+                    <li><a href="../html/article.html">FOOD</a></li>
+                    <li><a href="../html/article.html">TRAVEL</a></li>
+                    <li><a href="../html/contact.html">CONTACT</a></li>
+                </ul>
+            </section>
+            <section class="fsocial">
+                <h4>Social</h4>
+                <nav class="footer_menu">
+                    <ul>
+                    <li>
+                        <a href="https://facebook.com">
+                            <i class="fab fa-facebook" aria-hidden="true" title="Facebook" aria-label="facebook">
+                            </i>
+                            <span class="visually_hidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com">
+                            <i class="fab fa-instagram" aria-hidden="true" title="Instagram" aria-label="instagram">
+                            </i>
+                            <span class="visually_hidden">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pinterest.com">
+                            <i class="fab fa-pinterest" aria-hidden="true" title="Pinterest" aria-label="pinterest">
+                            </i>
+                            <span class="visually_hidden">Pinterest</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com">
+                            <i class="fab fa-twitter" aria-hidden="true" title="Twitter" aria-label="twitter">
+                            </i>
+                            <span class="visually_hidden">Twitter</span>
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
+            </section>
+            <small>Copyright &copy; StressRelief 2023. All rigths reserved.</small>
+        </div>
+    </footer>
+    <!-- END FOOTER======================================================================== -->
+</body>
+</html>
